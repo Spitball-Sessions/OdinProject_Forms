@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>webform test</title>
+    <link href = "style.css" rel = "stylesheet"></style>
+
+    
+</head>
+<body>
+    <div id = "imageFrame" class="frame">
+        <img id = "background" src="dancer.png">
+        <div class="logo" id = "logo">
+            <img id = "crown" src = "crown.svg">
+        </div>
+    </div>
+    <div id = "mainScreen" class = "space screen">
+        <div id = "copy" class="copy">
+            <h1>Princess Weddings</h1>
+            <p>Doesn't <em>your</em> princess deserve the royal treatment?</p>
+        </div>
+        <div id = "formWindow" class = "formDiv screen">
+            <form id="form">
+                <div id = "name">
+                <span><label id = "firstName" for="firstName">First Name: </label>
+                <input id = "firstName"></span>
+                <span><label id = "lastName" for="lastName">Last Name: </label>
+                <input id = "lastName"></span>
+                <span><label for="weddingDate">Wedding Date: </label>
+                <input id = "weddingDate" type="date"></span>
+                </div>
+                <div></div>
+                <div id="emails">
+                <span><label id="email" for="email">Email Address: </label>
+                <input type="email" id = "email" required></span>
+                <span><label id="confirm" for="confirm">Confirm Email: </label>
+                <input type="email" id = "confirm" required></span>
+
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>

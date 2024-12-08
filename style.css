@@ -1,0 +1,127 @@
+html{
+    font-size: 18px;
+}
+
+:root{
+    --border-color:#2d2924
+}
+
+body{
+    border: double var(--border-color) 4px;
+    display: flex;
+    background-color: #a1dcfa;
+}
+
+input:focus{
+    box-shadow:  0px 0px 6px 2px #2485b5;
+}
+
+input:invalid:focus:not(:placeholder-shown){
+    box-shadow: 0px 0px 6px 2px red;
+}
+
+form{
+    width: 100%;
+    gap: 40px;
+    display: flex;
+}
+
+#background{
+    position: absolute;
+    top: -10px;
+    left: -160px;
+    height: 1200px;
+    width: 700px;
+    z-index: -1;
+}
+
+#imageFrame{
+    height: 900px;
+    width:500px;
+    overflow:hidden;
+    border-right: solid var(--border-color) 3px;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 0px 50px 50px 0px;
+    box-shadow: 3px 3px 20px 0px #2485b5;
+}
+
+.logo{
+    position: absolute;
+    top:40%;
+    width: 720px;
+    height: 180px;
+    background-color: black;
+    margin-left: -100px;
+    opacity: 40%;
+    z-index: 1;
+    display: flex;
+    transform: translateY(-50%) rotate(-20deg);
+}
+
+#crown{
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    width: 360px;
+    transform: scaleY(0.6);
+    opacity: 100%;
+    margin-left: 80px;
+    filter: invert(100%);
+    transform: rotate(20deg) scaleY(.5) scaleX(.75);
+}
+.screen{
+    box-sizing: border-box;
+    width:100%;
+    display: flex;
+}
+
+#formWindow{
+    align-self: center;
+    justify-self: center;
+    padding: 5%;
+    padding-left: 10%;
+    background-color: white;
+    border-top: solid #2d2924 2px;
+    border-bottom: solid #2d2924 2px;
+    box-shadow: 0px 5px 15px 0px #2485b5;
+
+}
+
+#form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#mainScreen{
+    display: flex;
+    flex-direction: column;
+}
+
+#name{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#emails{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+#emails>span{
+
+}
+
+
+.copy{
+    width:80%;
+    padding:10%;
+    color:white;
+    padding-bottom: 5%;
+    text-shadow: -1px 2px #2485b5, 0px 0px 2px black;
+}
