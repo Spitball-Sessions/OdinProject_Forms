@@ -48,7 +48,7 @@ form{
 
 .logo{
     position: absolute;
-    top:40%;
+    top:34.2%;
     width: 720px;
     height: 180px;
     background-color: black;
@@ -64,11 +64,10 @@ form{
     align-self: center;
     justify-self: center;
     width: 360px;
-    transform: scaleY(0.6);
     opacity: 100%;
-    margin-left: 80px;
+    margin-left: 85px;
     filter: invert(100%);
-    transform: rotate(20deg) scaleY(.5) scaleX(.75);
+    transform:  scaleY(.5) scaleX(.75);
 }
 .screen{
     box-sizing: border-box;
@@ -119,8 +118,12 @@ form{
     align-self: center;
     justify-self: center;
     margin-bottom: -3rem;
+    margin-top: -3rem;
     border-color: var(--border-color);
-    background-color: #a1dcfa
+    background-color: #a1dcfa;
+    box-shadow: inset 4px 4px 6px #c5f3fc,
+    inset -4px -4px 6px 0px #2485b5;
+                
 }
 
 .copy{
