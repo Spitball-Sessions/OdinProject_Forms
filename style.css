@@ -113,10 +113,15 @@ form{
     justify-content: space-around;
 }
 
-#emails>span{
-
+#submit{
+    width: 8rem;
+    height: 2rem;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: -3rem;
+    border-color: var(--border-color);
+    background-color: #a1dcfa
 }
-
 
 .copy{
     width:80%;
