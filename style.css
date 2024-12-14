@@ -10,6 +10,11 @@ body{
     border: double var(--border-color) 4px;
     display: flex;
     background-color: #a1dcfa;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0px;
+    overflow: hidden;
+
 }
 
 input:focus{
@@ -20,11 +25,11 @@ input:invalid:focus:not(:placeholder-shown){
     box-shadow: 0px 0px 6px 2px red;
 }
 
+
 form{
     width: 100%;
-    gap: 40px;
-    display: flex;
 }
+
 
 #background{
     position: absolute;
@@ -35,8 +40,14 @@ form{
     z-index: -1;
 }
 
+#mainScreen{
+    display: flex;
+    flex-direction: column;
+}
+
+
 #imageFrame{
-    height: 900px;
+    height: 100vh;
     width:500px;
     overflow:hidden;
     border-right: solid var(--border-color) 3px;
@@ -79,7 +90,8 @@ form{
     align-self: center;
     justify-self: center;
     padding: 5%;
-    padding-left: 10%;
+    padding-left: 50px;
+    width: 100%;
     background-color: white;
     border-top: solid #2d2924 2px;
     border-bottom: solid #2d2924 2px;
@@ -87,22 +99,27 @@ form{
 
 }
 
-#form{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+form{
+    height: 7rem;
 }
 
-#mainScreen{
+#formInputs{
     display: flex;
     flex-direction: column;
+    height: 6rem;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+    width: 100%;
 }
+
 
 #name{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
+    margin-left: 0px;
 }
 
 #emails{
@@ -115,21 +132,18 @@ form{
 #submit{
     width: 8rem;
     height: 2rem;
-    align-self: center;
-    justify-self: center;
-    margin-bottom: -3rem;
-    margin-top: -3rem;
     border-color: var(--border-color);
     background-color: #a1dcfa;
     box-shadow: inset 4px 4px 6px #c5f3fc,
     inset -4px -4px 6px 0px #2485b5;
-                
+    position: relative;
+    left: calc(50% - 4rem);                
 }
 
 .copy{
     width:80%;
     padding:10%;
+    padding-left: 7%;
     color:white;
-    padding-bottom: 5%;
     text-shadow: -1px 2px #2485b5, 0px 0px 2px black;
 }

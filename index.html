@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>webform test</title>
+    <title>Princess Weddings</title>
     <link href = "style.css" rel = "stylesheet"></style>
 
     
@@ -21,22 +21,23 @@
         </div>
         <div id = "formWindow" class = "formDiv screen">
             <form id="form">
-                <div id = "name">
-                <span><label id = "firstName" for="firstName">First Name: </label>
-                <input id = "firstName"></span>
-                <span><label id = "lastName" for="lastName">Last Name: </label>
-                <input id = "lastName"></span>
-                <span><label for="weddingDate">Wedding Date: </label>
-                <input id = "weddingDate" type="date"></span>
+                <div id ="formInputs">
+                    <div id = "name">
+                        <span><label id = "firstName" for="firstName">First Name: </label>
+                        <input id = "firstName"></span>
+                        <span><label id = "lastName" for="lastName">Last Name: </label>
+                        <input id = "lastName"></span>
+                        <span><label for="weddingDate">Wedding Date: </label>
+                        <input id = "weddingDate" type="date"></span>
+                    </div>
+                    <div></div> <!--Forcibly inserts whitespace.-->
+                    <div id="emails">
+                        <span><label id="email" for="email">Email Address: </label>
+                        <input type="email" id = "email" required></span>
+                        <span><label id="confirm" for="confirm">Confirm Email: </label>
+                        <input type="email" id = "confirm" required></span>
+                    </div>
                 </div>
-                <div></div>
-                <div id="emails">
-                <span><label id="email" for="email">Email Address: </label>
-                <input type="email" id = "email" required></span>
-                <span><label id="confirm" for="confirm">Confirm Email: </label>
-                <input type="email" id = "confirm" required></span>
-                </div>
-                <div></div>
                 <button id="submit">Submit</button>
             </form>
         </div>
